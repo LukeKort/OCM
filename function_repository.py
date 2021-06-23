@@ -8,6 +8,37 @@ from tensorflow.keras.optimizers import Adam
 import tkinter as tk #hide tk window
 from tkinter import filedialog #get a file dialog window
 
+def ml_setup():
+    #Banco de dados - com extensão
+    file_name = 'data_5_1.xlsx'
+    file_path = 'saved_results/Banco de dados 5-1/Teste 27.1/Teste 27.1'
+
+    #proporção dos dados para treinamento/dados de validação
+    training_ratio = 0.8
+
+    #número de epochs
+    epochs = 10000
+
+    #quantidade de dados por epoch         
+    batch_size = 10
+
+    #Função de erro - escolher
+    loss_function = tf.keras.losses.MeanSquaredError()
+
+    #taxa de aprendizado - dinâmica
+    lr_rate = tf.keras.optimizers.schedules.InverseTimeDecay( #taxa de aprendizado - dinâmica
+        #initial_learning_rate / (1 + decay_rate * step / decay_step)
+        initial_learning_rate=1e-4,
+        decay_steps=100000,
+        decay_rate=0.01
+    ) 
+
+    opt = Adam(
+        learning_rate = lr_rate,
+        amsgrad = True) #otimizador
+
+    return file_name, file_path, training_ratio, epochs, batch_size, loss_function, lr_rate, opt
+
 def weibull_layer(x):
     """
     Lambda function for generating weibull parameters
@@ -55,9 +86,9 @@ def model_creator(loss_function, opt):
     inputs = Input(shape=(5,))
 
     # Build network with some predefined architecture
-    # Layer1 = Dense(units=100)
-    # Layer2 = Dense(units=80)
-    Layer3 = Dense(units=5)
+    # Layer1 = Dense(units=20, activation = 'sigmoid')
+    # Layer2 = Dense(units=20, activation = 'sigmoid')
+    Layer3 = Dense(units=20, activation = 'sigmoid')
 
     # output1 = Layer1(inputs)
     # output2 = Layer2(output1)
@@ -65,13 +96,13 @@ def model_creator(loss_function, opt):
 
     # Predict the parameters of a negative binomial distribution
     outputs = Dense(2)(last_output)
-    distribution_outputs = Lambda(weibull_layer)(outputs)
+    #distribution_outputs = Lambda(weibull_layer)(outputs)
 
-    # Construct model----------------------------------------------------------------------------------------------------
+    # Construct model
 
     model = Model(
         inputs=inputs, 
-        outputs=distribution_outputs
+        outputs=outputs
     )
 
     model.compile(
@@ -83,11 +114,11 @@ def model_creator(loss_function, opt):
 def plot_loss_val(history):    
     loss = history.history['loss']
 
-    # val_loss = history.history['val_loss']
+    val_loss = history.history['val_loss']
     epochs = range(1, len(loss) + 1)
 
     plt.plot(epochs, loss, '-', label='Training loss')
-    # plt.plot(epochs, val_loss, '--', label='Validation loss')
+    plt.plot(epochs, val_loss, '--', label='Validation loss')
     plt.title('Training and validation loss')
     plt.xlabel('epoch')
     plt.ylabel('loss')
@@ -102,7 +133,7 @@ def save_file(model):
         #model.save(export_file_path)
         model.save_weights(export_file_path)
     except:
-        print('Erro!')
+        print('File not sved!')
 
 def training_data(file_name,training_ratio):
     time = pd.read_excel(
