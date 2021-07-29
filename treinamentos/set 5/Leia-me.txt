@@ -1,0 +1,11 @@
+# Testes
+
+Essa pasta contém resultados do modelo para banco de dados seguindo o padrão:
+
+  Teste x - y . z
+
+	|   |   |-> Diferentes versões do gráfico loss x epoch (apenas para figuras)
+	|   |
+	|   |-> Número de treinamentos em uma mesmo conjunto de pesos
+	|
+	|-> Número do teste

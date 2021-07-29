@@ -1,14 +1,16 @@
+# Inicial data training - Lucas kort (Jun. 23, 2021)
+
 import tensorflow as tf
-from function_repository import model_creator, plot_loss_val, save_file, training_data, sanity_check, ml_setup
+from function_repository import model_creator, plot_loss_val, save_file, get_data, results_check, ml_setup
 
 #Carregar parâmetros
-file_name, file_path, training_ratio, epochs, batch_size, loss_function, lr_rate, opt = ml_setup()
+file_name, test_file_name, file_path, training_ratio, epochs, batch_size, loss_function, lr_rate, opt = ml_setup()
 
 #Criar modelo
 model = model_creator(loss_function,opt)
 
 #Obter dados
-train_x, train_y, val_x, val_y, test_x, test_y = training_data(file_name,training_ratio)
+train_x, train_y, val_x, val_y, test_x, test_y = get_data(file_name,training_ratio)
 
 # Treinamento do modelo
 history = model.fit(train_x, train_y, batch_size = batch_size, epochs = epochs, validation_data = (val_x, val_y))
@@ -17,7 +19,7 @@ history = model.fit(train_x, train_y, batch_size = batch_size, epochs = epochs, 
 pred_params = model.predict(test_x)
 
 #Teste de sanidade
-sanity_check(pred_params,test_x,test_y)
+results_check(pred_params,test_y)
 
 #Plotar loss e val
 plot_loss_val(history)

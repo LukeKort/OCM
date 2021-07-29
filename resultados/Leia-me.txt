@@ -1,0 +1,9 @@
+# Testes
+
+Essa pasta contém resultados do modelo para banco de dados seguindo o padrão:
+
+	x por y
+
+	|     |-> Versão da rede utilizada
+	|
+	|-> Banco de dados avaliado

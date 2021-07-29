@@ -1,4 +1,4 @@
-#code by Kort (2021-06-08)
+# Generates random data in specified shape - Lucas kort (Jun. 23, 2021)
 
 import numpy as np
 import pandas as pd
@@ -8,7 +8,7 @@ import tkinter as tk #hide tk window
 from tkinter import filedialog #get a file dialog window
 
 #Configuração dos dados de saída---------------------------------
-record_size = 5 #tamanho de cada vetor de daos
+record_size = 5 #tamanho de cada vetor de dados
 record_total_n = 1000 #número de vetores por dataset
 a = 1   #limite inferior de intervalo log(theta)
 b = 3.5 #limite superior de intervalo log(theta)

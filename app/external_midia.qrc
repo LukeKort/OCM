@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/help_button.png</file>
+    <file>icons/link_to_page.png</file>
+  </qresource>
+  <qresource prefix="equations">
+    <file>equations/gamma.png</file>
+    <file>equations/theta.png</file>
+    <file>equations/weibull.png</file>
+  </qresource>
+</RCC>
