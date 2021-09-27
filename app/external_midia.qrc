@@ -4,6 +4,12 @@
     <file>icons/link_to_page.png</file>
   </qresource>
   <qresource prefix="equations">
+    <file>equations/r_36.png</file>
+    <file>equations/mu_36.png</file>
+    <file>equations/sigma_36.png</file>
+    <file>equations/lognormal_36.png</file>
+    <file>equations/lognormal_48.png</file>
+    <file>equations/lognormal_68.png</file>
     <file>equations/gamma.png</file>
     <file>equations/theta.png</file>
     <file>equations/weibull.png</file>

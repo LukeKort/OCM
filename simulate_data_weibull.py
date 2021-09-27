@@ -62,7 +62,7 @@ parameters = np.zeros((record_total_n,3))
 time_weibull = np.zeros((record_total_n,record_size))
 x = np.random.default_rng().uniform(0,1,record_size)
 
-#geração automática de dados
+#geração automática de dados Weibull
 for i in range(record_total_n):
     log_theta = a+(b-a)*rand.random()
     theta = 10**log_theta
