@@ -1,4 +1,4 @@
-# ML na Confiabilidade – Introdução
+# Machine Learning na Confiabilidade Industrial
 
 Esse repositório contém os código e dados utilizados para minha dissertação de mestrado. 
 
