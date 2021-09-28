@@ -52,11 +52,11 @@ O aplicativo é divido em três abas que refletem a divisão do trabalho: Dados,
 
 -Você precisará das seguintes bibliotecas instaladas:
 
-- Numpy
-- Pandas
-- PyQt5
-- tkinter
-- Matplotlib
-- Tensorflow
+- Numpy 1.19.5 ou mais novo
+- Pandas 1.2.4 ou mais novo
+- PyQt5 5.9.2 ou mais novo
+- tkinter 8.6.10 ou mais novo
+- Matplotlib 3.3.4 ou mais novo
+- Tensorflow 2.5.0 ou mais novo
 
-OBS: Testado em Python 3.8.
+OBS: Testado em Python 3.8.10.
