@@ -2,7 +2,7 @@
 
 Esse repositório contém os código e dados utilizados para minha dissertação de mestrado. 
 
-O objeto de estudo foi a aplicação Machine Learning na confiabilidade industrial e o trabalho se divide em 3 partes:
+O objeto de estudo foi a criação de um modelo integrado para otimização do intervalo entre manutenções preventivas, por meio de previsão ajustada por Machine Learning de dados de falhas e otimização indicadores da manutenção industrial. O trabalho se divide em 3 partes:
 
 - Ajuste de dados TFF a curvas de distribuição Weibull por meio de ML e Lognormal por aritmética
 - Otimização dos indicadores industriais por meio do método PSO
@@ -23,7 +23,7 @@ OBS: Para aplicação standalone ver seção *Releases*.
 
 O aplicativo foi desenvolvido para facilitar a utilização dos algoritmos desenvolvidos nesse trabalho.
 
-O aplicativo é divido em três partes, como o trabalho.
+O aplicativo é divido em três abas que refletem a divisão do trabalho: Dados, Indicadores e Otimização. A aba Sobre contém créditos, links de interesse e acesso a conteúdo de ajuda e Tutorial.
 
 ## Dados 
 ![Screenshot 1](https://user-images.githubusercontent.com/64225460/135008233-5db257d5-1a12-4d30-bce4-ca5d1ff793aa.jpg)
@@ -58,3 +58,5 @@ O aplicativo é divido em três partes, como o trabalho.
 - tkinter
 - Matplotlib
 - Tensorflow
+
+OBS: Testado em Python 3.8.
