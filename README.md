@@ -2,7 +2,7 @@
 
 Esse repositório contém os código e dados utilizados para minha dissertação de mestrado. 
 
-O objeto de estudo foi a criação de um modelo integrado para otimização do intervalo entre manutenções preventivas, por meio de previsão ajustada por Machine Learning de dados de falhas e otimização indicadores da manutenção industrial. O trabalho se divide em 3 partes:
+O objetivo do estudo foi a criação de um modelo integrado para otimização do intervalo entre manutenções preventivas, por meio de previsão ajustada por Machine Learning de dados de tempo até falha e otimização de indicadores da manutenção industrial. O trabalho se divide em 3 partes:
 
 - Ajuste de dados TFF a curvas de distribuição Weibull por meio de ML e Lognormal por aritmética
 - Otimização dos indicadores industriais por meio do método PSO
@@ -11,10 +11,10 @@ O objeto de estudo foi a criação de um modelo integrado para otimização do i
 # Conteúdo do repositório
 
 - Pasta principal: Arquivos importantes para criação, treinamento e execução das redes neurais e geração de dados sintéticos
-- Resultados Lognormal: Planilha Excel com resultados para a distribuição Lognormal
-- Resultados Weibull: Planilha Excel com resultados para a distribuição Weibull
+- Resultados Lognormal: Planilha do Excel com resultados para a distribuição Lognormal
+- Resultados Weibull: Planilhas do Excel com resultados para a distribuição Weibull
 - Treinamentos: Redes Neurais treinadas para ajuste a distribuição Weibull
-- Data: Planilhas Excel com os bancos de dados gerados e utilizados nesse trabalho
+- Data: Planilhas do Excel com os bancos de dados gerados e utilizados nesse trabalho
 - App: Pasta contendo aplicação para terminal
 
 OBS: Para aplicação standalone ver seção *Releases*.
