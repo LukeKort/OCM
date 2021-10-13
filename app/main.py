@@ -1,4 +1,4 @@
-# Main ( Oct. 11, 2021)
+# Main ( Oct. 13, 2021)
 import math
 import numpy as np
 from numpy.core.fromnumeric import mean, transpose
@@ -21,7 +21,7 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__()
         self.ui = app_gui.Ui_mainWindow() # in this and next line you say that you will use all widgets from testUI over self.ui
         self.ui.setupUi(self)
-        self.setWindowTitle('Ainda não sei -betha') #set windows title Opp [--v]
+        self.setWindowTitle('OCM - 0.09') #set windows title Opp [--v]
 
         #Aba dados
         self.ui.salvar_dados_2.clicked.connect(self.salvar_dados)
@@ -39,6 +39,15 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.link_to_opp.clicked.connect(self.link_2_opp)
         self.ui.processar_opp.clicked.connect(self.otimizar)
         self.ui.plotar_grafico_opp.clicked.connect(self.plt_grafico_opp)
+
+        #Aba Sobre
+        self.ui.link_to_github.clicked.connect(self.link_2_github)
+        #self.ui.link_to_ajuda_yt.clicked.connect(self.link_2_ajuda_yt)
+        #self.ui.link_to_doc.clicked.connect(self.link_2_doc)
+        self.ui.link_kort.clicked.connect(self.link_kort)
+        #self.ui.link_cecilia.clicked.connect(self.link_cecilia)
+        #self.ui.link_eliane.clicked.connect(self.link_eliane)
+
 
 
 
@@ -476,6 +485,25 @@ class MainWindow(QtWidgets.QMainWindow):
             plt.show()
         except:
             return
+        
+    def link_2_github(self):
+
+        #Abrir link para o aplicativo Opp
+
+        import webbrowser
+
+        url = 'https://github.com/LukeKort/ocm'
+        os.startfile(url)
+    
+    def link_kort(self):
+
+        #Abrir link para o aplicativo Opp
+
+        import webbrowser
+
+        url = 'https://www.linkedin.com/in/lucaskort/'
+        os.startfile(url)
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="icons">
+    <file>icons/ocm_icon_bl.png</file>
+    <file>icons/app_icone.png</file>
+    <file>icons/ocm_icon.png</file>
+    <file>icons/ocm_icon_wth.png</file>
     <file>icons/help_button.png</file>
     <file>icons/link_to_page.png</file>
   </qresource>
