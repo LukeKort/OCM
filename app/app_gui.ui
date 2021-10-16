@@ -1402,7 +1402,7 @@
            <x>-10</x>
            <y>0</y>
            <width>531</width>
-           <height>721</height>
+           <height>731</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -2612,6 +2612,12 @@
               <verstretch>8</verstretch>
              </sizepolicy>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/icons/icons/link_to_page.png);</string>
             </property>
@@ -2697,6 +2703,12 @@
               <verstretch>8</verstretch>
              </sizepolicy>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/icons/icons/link_to_page.png);</string>
             </property>
@@ -2781,6 +2793,12 @@
               <horstretch>3</horstretch>
               <verstretch>8</verstretch>
              </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>16777215</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/icons/icons/link_to_page.png);</string>
@@ -2875,7 +2893,7 @@
             </property>
             <property name="maximumSize">
              <size>
-              <width>40</width>
+              <width>24</width>
               <height>16777215</height>
              </size>
             </property>
@@ -2963,28 +2981,6 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="link_cecilia">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-              <horstretch>3</horstretch>
-              <verstretch>8</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border-image: url(:/icons/icons/link_to_page.png);</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
            <spacer name="horizontalSpacer_26">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -3056,28 +3052,6 @@
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="link_eliane">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-              <horstretch>3</horstretch>
-              <verstretch>8</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>40</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border-image: url(:/icons/icons/link_to_page.png);</string>
-            </property>
-            <property name="text">
-             <string/>
             </property>
            </widget>
           </item>

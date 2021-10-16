@@ -1,0 +1,5 @@
+pyrcc5 icon.qrc -o icon_rc.py
+
+pyuic5 opp_gui.ui -o opp_gui.py
+
+pyinstaller --name="OCM" --noconsole --icon=icons\app_icon.ico main.py

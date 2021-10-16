@@ -1,14 +1,10 @@
 # Functions need in other scripts - Lucas kort (Jun. 23, 2021)
 
-#from tkinter.constants import UNITS
 import tensorflow as tf
-#import pandas as pd
-#import matplotlib.pyplot as plt
 from tensorflow.keras.layers import Input, Dense, Lambda
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
-# import tkinter as tk #hide tk window
-# from tkinter import filedialog #get a file dialog window
+import keras.engine
 
 
 def ml_setup():
