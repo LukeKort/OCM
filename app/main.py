@@ -1,4 +1,4 @@
-# Main ( Oct. 15, 2021)
+# Main ( Oct. 16, 2021)
 import math
 import numpy as np
 from numpy.core.fromnumeric import mean, transpose
@@ -83,18 +83,18 @@ class MainWindow(QtWidgets.QMainWindow):
 
         global ttf #criar variáveis globais
 
+        root = tk.Tk() #abrir janela para entrar com path de salvamento
+        root.withdraw() #esconder janela do terminal
+        file_path = filedialog.askopenfile(filetypes=(('cvs file', '*.csv'),))
+
         try:
-            root = tk.Tk() #abrir janela para entrar com path de salvamento
-            root.withdraw() #esconder janela do terminal
-            file_path = filedialog.askopenfile(filetypes=(('cvs file', '*.csv'),))
+            dada_df = pd.read_csv(file_path) #se nenhum path foi informado, não lerá arquivo
         except:
             root = tk.Tk() #abrir janela para entrar com path de salvamento
             root.withdraw() #esconder janela do terminal
-            tk.messagebox.showerror('Erro de seleção', 'Por favor, selecione um arquivo ".csv".')
+            tk.messagebox.showinfo('Erro de seleção', 'Nenhum arquivo selecionado.')
             return 
-
-        dada_df = pd.read_csv(file_path)
-
+       
         col_name = list(dada_df)[1]
 
         df = dada_df[col_name]

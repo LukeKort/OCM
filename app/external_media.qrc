@@ -8,6 +8,7 @@
     <file>icons/link_to_page.png</file>
   </qresource>
   <qresource prefix="equations">
+    <file>equations/r2_36.png</file>
     <file>equations/r_36.png</file>
     <file>equations/mu_36.png</file>
     <file>equations/sigma_36.png</file>
