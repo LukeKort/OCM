@@ -293,7 +293,7 @@ class MainWindow(QtWidgets.QMainWindow):
             #calculo da tx. de falha
             h = (gamma_/theta)*((t/theta)**(gamma_-1))
         else:
-            #Calculo da confiabilidade
+            #Calculo da confiabilidade (precisa para calcula a tx)
             z = (mu - math.log(t))/sigma
             termo_1 = ((4-math.pi)*abs(abs(z)) + math.sqrt(2*math.pi)*(math.pi-2))
             termo_2 = (((4-math.pi)*math.sqrt(2*math.pi)*abs(z)**2)+(2*math.pi*abs(z))+(2*math.sqrt(2*math.pi)*(math.pi-2)))
@@ -311,7 +311,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def calcular_tempo_para_falha(self):
 
-        #Calcular taxa de falha a partir de uma dado tempo
+        #Calcular tempo a partir de uma dada taxa de falha
 
         try:
             h = float(self.ui.falha_2_tempo.text())
