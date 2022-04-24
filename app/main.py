@@ -42,7 +42,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         #Aba Sobre
         self.ui.link_to_github.clicked.connect(self.link_2_github)
-        #self.ui.link_to_ajuda_yt.clicked.connect(self.link_2_ajuda_yt)
+        self.ui.link_to_ajuda_yt.clicked.connect(self.link_to_ajuda_yt)
         #self.ui.link_to_doc.clicked.connect(self.link_2_doc)
         self.ui.link_kort.clicked.connect(self.link_kort)
 
@@ -490,7 +490,16 @@ class MainWindow(QtWidgets.QMainWindow):
 
         import webbrowser
 
-        url = 'https://github.com/LukeKort/ocm'
+        url = 'https://github.com/LukeKort/ocm/releases'
+        os.startfile(url)
+
+    def link_to_ajuda_yt(self):
+
+        #Abrir link para o aplicativo Opp
+
+        import webbrowser
+
+        url = 'https://youtu.be/LIYQkKxuirg'
         os.startfile(url)
     
     def link_kort(self):
