@@ -265,7 +265,7 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             root = tk.Tk() #abrir janela para entrar com path de salvamento
             root.withdraw() #esconder janela do terminal
-            tk.messagebox.showerror('Erro interno', 'Função ainda não implementada para Lognormal.\nPor favor, check atualizações.')
+            tk.messagebox.showinfo('Informação', 'Função não disponivel para Lognormal.\nPor favor, altere para Weibull.')
             return
         
         self.ui.exibir_tempo_para_conf.clear()
@@ -333,7 +333,7 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             root = tk.Tk() #abrir janela para entrar com path de salvamento
             root.withdraw() #esconder janela do terminal
-            tk.messagebox.showerror('Erro interno', 'Função ainda não implementada para Lognormal.\nPor favor, check atualizações.')
+            tk.messagebox.showinfo('Informação', 'Função não disponivel para Lognormal.\nPor favor, altere para Weibull.')
             return
 
         self.ui.exibir_tempo_p_falha.clear()
