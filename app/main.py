@@ -1,4 +1,4 @@
-# Main ( Oct. 16, 2021)
+# Main ( May 03, 2022) by Lucas Kort
 import math
 import numpy as np
 from numpy.core.fromnumeric import mean, transpose
@@ -21,7 +21,7 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__()
         self.ui = app_gui.Ui_mainWindow() # in this and next line you say that you will use all widgets from testUI over self.ui
         self.ui.setupUi(self)
-        self.setWindowTitle('OCM - v0.10') #set windows title Opp [--v]
+        self.setWindowTitle('OCM - v1.0.2') #set windows title Opp [--v]
 
         #Aba dados
         self.ui.salvar_dados_2.clicked.connect(self.salvar_dados)
