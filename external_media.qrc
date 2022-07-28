@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/ocm_icon_bl.png</file>
+    <file>icons/app_icone.png</file>
+    <file>icons/ocm_icon.png</file>
+    <file>icons/ocm_icon_wth.png</file>
+    <file>icons/help_button.png</file>
+    <file>icons/link_to_page.png</file>
+  </qresource>
+  <qresource prefix="equations">
+    <file>equations/r2_36.png</file>
+    <file>equations/r_36.png</file>
+    <file>equations/mu_36.png</file>
+    <file>equations/sigma_36.png</file>
+    <file>equations/lognormal_36.png</file>
+    <file>equations/lognormal_48.png</file>
+    <file>equations/lognormal_68.png</file>
+    <file>equations/gamma.png</file>
+    <file>equations/theta.png</file>
+    <file>equations/weibull.png</file>
+  </qresource>
+</RCC>
